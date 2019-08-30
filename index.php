@@ -11,7 +11,7 @@ $ucastnici = [
     "Jirka",
 ];
 
-$pocetUcastniku = 3;
+$pocetUcastniku = count($ucastnici);
 $volnaKapacita = $kapacita - $pocetUcastniku;
 
 if ($pocetUcastniku == 0) {
