@@ -42,5 +42,16 @@ if ($zbyvaMist <= 0) {
         <li>Přihlášeno účastníků: <?php echo $prihlaseno; ?></li>
         <li>Zbývá míst: <?php echo $zbyvaMist; ?></li>
     </ul>
+
+    <h2>Přihlášení účastníci</h2>
+    <ol>
+        <?php
+        foreach ($ucastnici as $ucastnik) {
+            echo "<li>";
+            echo $ucastnik;
+            echo "</li>";
+        }
+        ?>
+    </ol>
 </body>
 </html>
