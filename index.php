@@ -5,6 +5,13 @@ $misto = "Praha";
 $kapacita = 30;
 $pocetUcastniku = 5;
 $volnaKapacita = $kapacita - $pocetUcastniku;
+
+if ($pocetUcastniku == 0) {
+    $pocetUcastniku = "Nikdo nepřijde :-(";
+}
+if ($volnaKapacita <= 0) {
+    $volnaKapacita = "Kapacita je vyčerpána";
+}
 ?>
 
 <!DOCTYPE html>
