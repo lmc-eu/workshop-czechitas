@@ -5,7 +5,14 @@ $poradatel = "LMC";
 $mistoKonani = "Praha";
 
 $kapacita = 30;
-$prihlaseno = 5;
+
+$ucastnici = [
+    "Petr",
+    "Ondra",
+    "Jirka",
+];
+$prihlaseno = 3;
+
 $zbyvaMist = $kapacita - $prihlaseno;
 
 if ($prihlaseno == 0) {
