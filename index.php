@@ -11,7 +11,7 @@ $ucastnici = [
     "Ondra",
     "Jirka",
 ];
-$prihlaseno = 3;
+$prihlaseno = count($ucastnici);
 
 $zbyvaMist = $kapacita - $prihlaseno;
 
