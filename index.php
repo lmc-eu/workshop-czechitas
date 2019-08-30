@@ -4,11 +4,8 @@ $poradatel = "Ondra, Petr, Jirka";
 $misto = "Praha";
 $kapacita = 30;
 
-$ucastnici = [
-    "Petr",
-    "Ondra",
-    "Jirka",
-];
+$ucastnici = explode("\n", file_get_contents("ucastnici.txt"));
+
 $pocetUcastniku = count($ucastnici);
 
 $volnaKapacita = $kapacita - $pocetUcastniku;
