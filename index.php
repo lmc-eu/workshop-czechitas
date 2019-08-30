@@ -9,6 +9,14 @@ $kapacita = 30;
 $pocetUcastniku = 5;
 $zbyvaMist = $kapacita - $pocetUcastniku;
 
+if ($pocetUcastniku == 0) {
+    $pocetUcastniku = "Nikdo nepřijde :-(";
+}
+
+if ($zbyvaMist <= 0) {
+    $zbyvaMist = "Už není místo :-(";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
