@@ -6,7 +6,14 @@ $poradatel = "Ondra, Petr, Jirka";
 $lokace = "Praha";
 
 $kapacita = 30;
-$pocetUcastniku = 5;
+
+$ucastnici = [
+    "Petr",
+    "Ondra",
+    "Jirka",
+];
+$pocetUcastniku = 3;
+
 $zbyvaMist = $kapacita - $pocetUcastniku;
 
 if ($pocetUcastniku == 0) {
