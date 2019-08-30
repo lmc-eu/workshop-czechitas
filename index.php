@@ -3,7 +3,14 @@ $nazevParty = "Czechitas";
 $poradatel = "Ondra, Petr, Jirka";
 $misto = "Praha";
 $kapacita = 30;
-$pocetUcastniku = 5;
+
+$ucastnici = [
+    "Petr",
+    "Ondra",
+    "Jirka",
+];
+$pocetUcastniku = 3;
+
 $volnaKapacita = $kapacita - $pocetUcastniku;
 
 if ($pocetUcastniku == 0) {
