@@ -7,6 +7,13 @@ $kapacita = 30;
 
 $ucastnici = explode("\n", file_get_contents("ucastnici.txt"));
 
+if (isset($_GET["pridej"])) {
+    $novyUcastnik = $_GET["pridej"];
+    $ucastnici[] = $novyUcastnik;
+
+    file_put_contents("ucastnici.txt", implode("\n", $ucastnici));
+}
+
 $pocetUcastniku = count($ucastnici);
 $volnaKapacita = $kapacita - $pocetUcastniku;
 
