@@ -1,20 +1,32 @@
+<?php
+
+$nazevParty = "Párty Czechitas";
+
+$poradatel = "Ondra, Petr, Jirka";
+$lokace = "Praha";
+
+$kapacita = 30;
+$pocetUcastniku = 5;
+$zbyvaMist = $kapacita - $pocetUcastniku;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Párty Czechitas</title>
+    <title><?php echo $nazevParty; ?></title>
 </head>
 <body>
-    <h1>Párty Czechitas</h1>
+    <h1><?php echo $nazevParty; ?></h1>
 
     <ul>
-        <li>Pořadatel: Jirka, Petr, Ondra</li>
-        <li>Lokalita: Praha</li>
-        <li>Kapacita: 30</li>
-        <li>Počet účastníků: 10</li>
-        <li>Zbývá míst: 20</li>
+        <li>Pořadatel: <?php echo $poradatel; ?></li>
+        <li>Lokalita: <?php echo $lokace; ?></li>
+        <li>Kapacita: <?php echo $kapacita; ?></li>
+        <li>Počet účastníků: <?php echo $pocetUcastniku; ?></li>
+        <li>Zbývá míst: <?php echo $zbyvaMist; ?></li>
     </ul>
 </body>
 </html>
