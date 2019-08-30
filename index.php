@@ -12,6 +12,9 @@ if (isset($_GET["pridej"])) {
     $ucastnici[] = $novyUcastnik;
 
     file_put_contents("ucastnici.txt", implode("\n", $ucastnici));
+
+    header("Location: /");
+    exit;
 }
 
 $pocetUcastniku = count($ucastnici);
