@@ -42,5 +42,18 @@ if ($volnaKapacita <= 0) {
         <li>Zbývá míst: <?php echo $volnaKapacita; ?></li>
         <li>Příjde: <?php echo $pocetUcastniku; ?></li>
     </ul>
+
+    <h2>Účastníci</h2>
+    <ol>
+        <?php
+        foreach ($ucastnici as $ucastnik) {
+            ?>
+            <li>
+                <?php echo $ucastnik; ?>
+            </li>
+            <?php
+        }
+        ?>
+    </ol>
 </body>
 </html>
