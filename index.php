@@ -6,11 +6,8 @@ $mistoKonani = "Praha";
 
 $kapacita = 30;
 
-$ucastnici = [
-    "Petr",
-    "Ondra",
-    "Jirka",
-];
+$obsahSouboru = file_get_contents("ucastnici.txt");
+$ucastnici = explode("\n", $obsahSouboru);
 $prihlaseno = count($ucastnici);
 
 $zbyvaMist = $kapacita - $prihlaseno;
