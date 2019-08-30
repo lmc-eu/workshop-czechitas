@@ -7,11 +7,9 @@ $lokace = "Praha";
 
 $kapacita = 30;
 
-$ucastnici = [
-    "Petr",
-    "Ondra",
-    "Jirka",
-];
+$obsahSouboru = file_get_contents("ucastnici.txt");
+$ucastnici = explode("\n", $obsahSouboru);
+
 $pocetUcastniku = count($ucastnici);
 
 $zbyvaMist = $kapacita - $pocetUcastniku;
