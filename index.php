@@ -63,5 +63,10 @@ if ($zbyvaMist <= 0) {
         }
         ?>
     </ol>
+
+    <form>
+        Jméno: <input type="text" name="novy"><br>
+        <input type="submit" value="Přidat">
+    </form>
 </body>
 </html>
