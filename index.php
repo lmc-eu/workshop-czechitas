@@ -4,8 +4,16 @@ $nazevParty = "Hard";
 $poradatel = "Petr";
 $misto = "Praha";
 $kapacita = 30;
-$pocetUcastniku = 5;
+$pocetUcastniku = 20;
 $volnaKapacita = $kapacita - $pocetUcastniku;
+
+if ($pocetUcastniku == 0) {
+    $pocetUcastniku = "Nikdo nepřijde :-(";
+}
+
+if ($volnaKapacita <= 0) {
+    $volnaKapacita = "Kapacita je vyčerpána";
+}
 
 ?>
 <!DOCTYPE html>
