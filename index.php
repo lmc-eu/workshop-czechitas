@@ -16,6 +16,9 @@ if (isset($_GET["novy"])) {
 
     $obsahSouboru = implode("\n", $ucastnici);
     file_put_contents("ucastnici.txt", $obsahSouboru);
+
+    header("Location: /");
+    exit;
 }
 
 $pocetUcastniku = count($ucastnici);
