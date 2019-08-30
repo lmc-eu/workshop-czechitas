@@ -8,6 +8,14 @@ $kapacita = 30;
 $prihlaseno = 5;
 $zbyvaMist = $kapacita - $prihlaseno;
 
+if ($prihlaseno == 0) {
+    $prihlaseno = "Nikdo nepřijde :(";
+}
+
+if ($zbyvaMist <= 0) {
+    $zbyvaMist = "Už není místo :(";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
