@@ -59,5 +59,10 @@ if ($volnaKapacita <= 0) {
         }
         ?>
     </ol>
+
+    <form>
+        <input type="text" name="pridej">
+        <input type="submit" value="Přidat">
+    </form>
 </body>
 </html>
