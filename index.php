@@ -8,6 +8,15 @@ $kapacita = 30;
 
 $obsahSouboru = file_get_contents("ucastnici.txt");
 $ucastnici = explode("\n", $obsahSouboru);
+
+if (isset($_GET["novy"])) {
+    $novyUcastnik = $_GET["novy"];
+    $ucastnici[] = $novyUcastnik;
+
+    $obsahSouboru = implode("\n", $ucastnici);
+    file_put_contents("ucastnici.txt", $obsahSouboru);
+}
+
 $prihlaseno = count($ucastnici);
 
 $zbyvaMist = $kapacita - $prihlaseno;
