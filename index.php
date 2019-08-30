@@ -9,7 +9,7 @@ $ucastnici = [
     "Ondra",
     "Jirka",
 ];
-$pocetUcastniku = 3;
+$pocetUcastniku = count($ucastnici);
 
 $volnaKapacita = $kapacita - $pocetUcastniku;
 
